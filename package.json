@@ -1,0 +1,21 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "demo project for lesson",
+  "keywords": [
+    "demo",
+    "webpack"
+  ],
+  "license": "ISC",
+  "author": "Vladimir",
+  "type": "commonjs",
+  "main": "lib/bundle.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
