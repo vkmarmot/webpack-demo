@@ -10,6 +10,8 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "lib"),
+    library: "MyLibrary", // ← имя глобальной переменной
+    libraryTarget: "var", // ← тип экспорта (var для window)
   },
   module: {
     rules: [
