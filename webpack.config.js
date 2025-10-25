@@ -11,4 +11,15 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "lib"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i, // применяется к .css файлам
+        use: [
+          "style-loader", // внедряет CSS в DOM
+          "css-loader", // преобразует CSS в JS модуль
+        ],
+      },
+    ],
+  },
 };
