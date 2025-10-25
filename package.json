@@ -8,7 +8,7 @@
   ],
   "license": "ISC",
   "author": "Vladimir",
-  "type": "commonjs",
+  "type": "module",
   "main": "lib/bundle.js",
   "scripts": {
     "test": "jest",

@@ -1,7 +1,5 @@
-require("./style.css");
+import "./style.css";
 
-module.exports = {
-  doMain() {
-    console.log("🫨");
-  },
-};
+export function doMain() {
+  console.log("🫨");
+}

@@ -1,6 +1,10 @@
-const path = require("path");
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default {
   // Точка входа
   entry: "./src/index.js",
 
@@ -9,8 +13,14 @@ module.exports = {
   // Выходной файл
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "lib"),
-    libraryTarget: "commonjs", // ← тип экспорта (commonjs)
+    path: resolve(__dirname, "lib"),
+    module: true, // ← указывает что выход - ES модуль
+    library: {
+      type: "module", // ← тип библиотеки - ES модуль
+    },
+  },
+  experiments: {
+    outputModule: true, // ← включаем экспериментальную фичу
   },
   module: {
     rules: [
