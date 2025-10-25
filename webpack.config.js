@@ -4,6 +4,8 @@ module.exports = {
   // Точка входа
   entry: "./src/index.js",
 
+  mode: "development",
+
   // Выходной файл
   output: {
     filename: "bundle.js",
