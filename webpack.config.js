@@ -38,4 +38,5 @@ export default {
       },
     ],
   },
+  externals: [/@babel\/runtime/i],
 };
