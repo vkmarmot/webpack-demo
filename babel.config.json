@@ -4,9 +4,20 @@
       "@babel/preset-env",
       {
         "modules": false,
+        "useBuiltIns": false,
         "targets": {
           "chrome": "17"
         }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": true,
+        "regenerator": true,
+        "corejs": 3 // ← используем corejs 3 для полифиллов
       }
     ]
   ]
