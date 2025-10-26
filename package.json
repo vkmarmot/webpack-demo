@@ -16,6 +16,10 @@
     "watch": "webpack --watch"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.102.1",
