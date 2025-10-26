@@ -17,7 +17,7 @@
       {
         "helpers": true,
         "regenerator": true,
-        "corejs": 3 // ← используем corejs 3 для полифиллов
+        "corejs": false
       }
     ]
   ]

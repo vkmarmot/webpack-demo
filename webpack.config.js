@@ -31,6 +31,11 @@ export default {
           "css-loader", // преобразует CSS в JS модуль
         ],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: "babel-loader",
+      },
     ],
   },
 };
